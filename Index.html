@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aritri Siddhanta | Data Science Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/4e3b2b9f7d.js" crossorigin="anonymous"></script>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0b1120;   /* Deep Dark Blue */
+    color:#e5e7eb;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    width:100%;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#0f172a;  /* Dark Navy */
+    border-bottom:1px solid #1e293b;
+    z-index:1000;
+}
+
+nav h2{
+    color:#e1ec13;
+    font-weight:500;
+    font-style: normal;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#cbd5e1;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#3b7d98;
+}
+
+/* HERO */
+header{
+    min-height:50vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 8%;
+    background:#0b1120;
+}
+
+header h1{
+    font-size:3rem;
+    color:#22637f;
+}
+
+.typing{
+    margin-top:10px;
+    font-weight:600;
+    color:#cba40a;
+}
+
+.contact{
+    margin-top:15px;
+    color:#94a3b8;
+}
+
+.btn{
+    margin-top:25px;
+    padding:12px 28px;
+    border-radius:30px;
+    border:none;
+    background:#4398bd;
+    color:#0b1327;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 25px rgba(86, 123, 139, 0.3);
+}
+
+/* SECTION */
+section{
+    padding:100px 10%;
+    background:#0b1120;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:50px;
+    color:#38bdf8;
+}
+
+/* CARD */
+.card{
+    background:#111827;
+    padding:30px;
+    border-radius:25pxpx;
+    margin-bottom:35px;
+    border:1px solid #7d8590;
+    transition:0.4s;
+}
+.card:hover{
+    transform:translateY(-6px);
+    border-color:#38bdf8;
+}
+/* SKILLS */
+.skill{
+    margin-bottom:500pxpx;
+    color:#e5e7eb;
+}
+.progress{
+    background:#1e293b;
+    height:8px;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.progress div{
+    height:8px;
+    background:#38bdf8;
+    width:0;
+    transition:1.5s;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:25px;
+    background:#0f172a;
+    border-top:1px solid #1e293b;
+    color:#94a3b8;
+}
+
+@media(max-width:768px){
+    nav ul{display:none;}
+    header h1{font-size:2rem;}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>E-Portfolio</h2>
+    <ul>
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Aritri Siddhanta</h1>
+    <div class="typing"></div>
+    <header>
+    <h1>Aritri Siddhanta</h1>
+    <div class="typing"></div>
+    <div class="contact">
+        Bangalore, India 700078 | +91 7098622290 | siddhantaaritri679@gmail.com
+    </div>
+
+    <div style="margin-top:25px; display:flex; gap:15px; flex-wrap:wrap; justify-content:center;">
+        <button class="btn" onclick="window.location='resume.html'">View Resume</button>
+
+        <a href="https://www.linkedin.com/in/aritri-siddhanta-8947aa258" target="_blank">
+            <button class="btn">LinkedIn</button>
+        </a>
+
+        <a href="mailto:siddhantaaritri679@gmail.com">
+            <button class="btn">Email Me</button>
+        </a>
+    </div>
+</header>
+
+<section id="summary">
+    <h2 class="section-title">Professional Summary</h2>
+    <div class="card">
+        Dedicated and adaptable professional with a proactive attitude and the ability to learn quickly.
+        Strong work ethic and effective communication skills. Detail-oriented professional with strong analytical skills in data verification and trend analysis.
+        Proficient in Python and Full Stack Development, ready to leverage expertise to drive informed business decisions.
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="card">
+
+        <div class="skill">
+            Python
+            <div class="progress"><div style="width:90%"></div></div>
+        </div>
+
+        <div class="skill">
+            MERN Stack
+            <div class="progress"><div style="width:85%"></div></div>
+        </div>
+
+        <div class="skill">
+            Time Series Models
+            <div class="progress"><div style="width:88%"></div></div>
+        </div>
+
+        <div class="skill">
+            Data Analysis
+            <div class="progress"><div style="width:85%"></div></div>
+        </div>
+        <div class="skill">
+            ReactJS
+            <div class="progress"><div style="width:85%"></div></div>
+        </div>
+        <div class="skill">
+            Full Stack Development
+            <div class="progress"><div style="width:85%"></div></div>
+        </div>
+        <div class="skill">
+            DBMS
+            <div class="progress"><div style="width:85%"></div></div>
+        </div>
+        <div class="skill">
+            HTML & CSS
+            <div class="progress"><div style="width:85%"></div></div>
+        </div>
+        <div class="skill">
+            SQL
+            <div class="progress"><div style="width:85%"></div></div>
+        </div>
+        <div class="skill">
+            Power BI
+            <div class="progress"><div style="width:85%"></div></div>
+        </div>
+
+    </div>
+</section>
+
+<section id="experience">
+    <h2 class="section-title">Work Experience</h2>
+    <div class="card">
+        <strong>Process Associate (09/2024 – 06/2025)</strong><br>
+        Genpact India Pvt. Ltd. – Kolkata, India
+        <ul>
+            <li>Monitored data accuracy and consistency across systems.</li>
+            <li>Conducted data verification and documentation.</li>
+            <li>Supported business processes with analytical skills.</li>
+            <li>Analyzed trends to guide decisions.</li>
+        </ul>
+    </div>
+</section>
+<section id="internship">
+    <h2 class="section-title">Internship</h2>
+    <div class="card">
+        <strong>Industrial Internship</strong><br>
+        Ardent Computech Pvt. Ltd – Sector V, Bidhan Nagar, Kolkata
+        <ul>
+            <li>Project: Web Development on Railway Reservation System</li>
+            <li>Worked on frontend and backend integration.</li>
+            <li>Built modules for ticket booking and user management.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="grid">
+        <div class="card">
+            <strong>PGDM – Data Science & Business Analytics</strong><br>
+            ISBR Business School – Expected 2027
+        </div>
+        <div class="card">
+            <strong>BCA – 8.45 CGPA (2024)</strong><br>
+            The Heritage Academy – Kolkata
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="grid">
+        <div class="card">
+            <strong>Stock Market Forecasting</strong>
+            <p>Auto ARIMA, ETS, SES, DES, TES models implemented.</p>
+        </div>
+        <div class="card">
+            <strong>Time Series Forecasting Website</strong>
+            <p>Educational forecasting platform with chatbot.</p>
+        </div>
+    </div>
+</section>
+
+<section id="certifications">
+    <h2 class="section-title">Certifications</h2>
+    <div class="card">
+        Data Visualization | Microsoft Azure Developer Associate | Google Analytics |
+        Programming Foundations: APIs & Web Services | Cyber Security with Cloud Computing
+    </div>
+</section>
+
+<footer>
+    © 2026 Aritri Siddhanta | Data Science Portfolio
+</footer>
+
+<script>
+
+/* Typing Effect */
+const text = "Data Science | Business Analyst | ML Enthusiast";
+let i=0;
+function type(){
+    if(i<text.length){
+        document.querySelector(".typing").innerHTML+=text.charAt(i);
+        i++;
+        setTimeout(type,80);
+    }
+}
+type();
+
+</script>
+
+</body>
+</html>
